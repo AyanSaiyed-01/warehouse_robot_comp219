@@ -1,0 +1,42 @@
+[0.034s] Invoking command in '/root/robot_project/build/warehouse_robot_comp219': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /root/robot_project/build/warehouse_robot_comp219 -- -j20 -l20
+[0.076s] [ 50%] [32mBuilding CXX object CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o[0m
+[6.662s] [100%] [32m[1mLinking CXX executable nav_menu_client[0m
+[7.507s] [100%] Built target nav_menu_client
+[7.521s] Invoked command in '/root/robot_project/build/warehouse_robot_comp219' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /root/robot_project/build/warehouse_robot_comp219 -- -j20 -l20
+[7.536s] Invoking command in '/root/robot_project/build/warehouse_robot_comp219': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /root/robot_project/build/warehouse_robot_comp219
+[7.543s] -- Install configuration: ""
+[7.544s] -- Up-to-date: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/worlds
+[7.544s] -- Up-to-date: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/worlds/warehouse.world
+[7.544s] -- Up-to-date: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/urdf
+[7.544s] -- Up-to-date: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/urdf/warehouse_robot.urdf.xacro
+[7.545s] -- Up-to-date: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/urdf/warehouse_robot.urdf
+[7.545s] -- Up-to-date: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/launch
+[7.545s] -- Up-to-date: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/launch/sim.launch.py
+[7.545s] -- Up-to-date: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/launch/nav2.launch.py
+[7.546s] -- Up-to-date: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/launch/slam.launch.py
+[7.546s] -- Up-to-date: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/config
+[7.546s] -- Up-to-date: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/config/ros_gz_bridge.yaml
+[7.546s] -- Up-to-date: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/config/slam_toolbox.yaml
+[7.547s] -- Installing: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/config/nav2_params.yaml
+[7.547s] -- Up-to-date: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/maps
+[7.547s] -- Up-to-date: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/maps/warehouse_map.pgm
+[7.547s] -- Up-to-date: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/maps/warehouse_map.yaml
+[7.547s] -- Up-to-date: /root/robot_project/install/warehouse_robot_comp219/lib/warehouse_robot_comp219/odom_tf_publisher.py
+[7.547s] -- Installing: /root/robot_project/install/warehouse_robot_comp219/lib/warehouse_robot_comp219/nav_menu_client
+[7.549s] -- Set non-toolchain portion of runtime path of "/root/robot_project/install/warehouse_robot_comp219/lib/warehouse_robot_comp219/nav_menu_client" to ""
+[7.550s] -- Up-to-date: /root/robot_project/install/warehouse_robot_comp219/share/ament_index/resource_index/package_run_dependencies/warehouse_robot_comp219
+[7.550s] -- Up-to-date: /root/robot_project/install/warehouse_robot_comp219/share/ament_index/resource_index/parent_prefix_path/warehouse_robot_comp219
+[7.550s] -- Up-to-date: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/environment/ament_prefix_path.sh
+[7.550s] -- Up-to-date: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/environment/ament_prefix_path.dsv
+[7.551s] -- Up-to-date: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/environment/path.sh
+[7.551s] -- Up-to-date: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/environment/path.dsv
+[7.551s] -- Up-to-date: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/local_setup.bash
+[7.551s] -- Up-to-date: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/local_setup.sh
+[7.551s] -- Up-to-date: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/local_setup.zsh
+[7.551s] -- Up-to-date: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/local_setup.dsv
+[7.551s] -- Installing: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/package.dsv
+[7.551s] -- Up-to-date: /root/robot_project/install/warehouse_robot_comp219/share/ament_index/resource_index/packages/warehouse_robot_comp219
+[7.552s] -- Up-to-date: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/cmake/warehouse_robot_comp219Config.cmake
+[7.553s] -- Up-to-date: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/cmake/warehouse_robot_comp219Config-version.cmake
+[7.554s] -- Up-to-date: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/package.xml
+[7.557s] Invoked command in '/root/robot_project/build/warehouse_robot_comp219' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /root/robot_project/build/warehouse_robot_comp219

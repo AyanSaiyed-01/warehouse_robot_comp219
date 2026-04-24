@@ -2,21 +2,18 @@ import os
 
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
-from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch.actions import DeclareLaunchArgument
 from launch.substitutions import LaunchConfiguration
+from launch_ros.actions import Node
 
 
 def generate_launch_description():
     pkg = get_package_share_directory("warehouse_robot_comp219")
-    nav2_pkg = get_package_share_directory("nav2_bringup")
 
     map_file = LaunchConfiguration("map")
     params_file = LaunchConfiguration("params_file")
     use_sim_time = LaunchConfiguration("use_sim_time")
     autostart = LaunchConfiguration("autostart")
-    use_composition = LaunchConfiguration("use_composition")
-    use_respawn = LaunchConfiguration("use_respawn")
 
     declare_map = DeclareLaunchArgument(
         "map",
@@ -42,30 +39,100 @@ def generate_launch_description():
         description="Automatically startup nav2",
     )
 
-    declare_use_composition = DeclareLaunchArgument(
-        "use_composition",
-        default_value="True",
-        description="Use composed bringup",
+    map_server = Node(
+        package="nav2_map_server",
+        executable="map_server",
+        name="map_server",
+        output="screen",
+        parameters=[
+            params_file,
+            {"use_sim_time": use_sim_time},
+            {"yaml_filename": map_file},
+        ],
     )
 
-    declare_use_respawn = DeclareLaunchArgument(
-        "use_respawn",
-        default_value="False",
-        description="Respawn nodes if they crash",
+    amcl = Node(
+        package="nav2_amcl",
+        executable="amcl",
+        name="amcl",
+        output="screen",
+        parameters=[params_file, {"use_sim_time": use_sim_time}],
     )
 
-    nav2_bringup = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            os.path.join(nav2_pkg, "launch", "bringup_launch.py")
-        ),
-        launch_arguments={
-            "map": map_file,
-            "params_file": params_file,
-            "use_sim_time": use_sim_time,
-            "autostart": autostart,
-            "use_composition": use_composition,
-            "use_respawn": use_respawn,
-        }.items(),
+    lifecycle_manager_localization = Node(
+        package="nav2_lifecycle_manager",
+        executable="lifecycle_manager",
+        name="lifecycle_manager_localization",
+        output="screen",
+        parameters=[
+            {"use_sim_time": use_sim_time},
+            {"autostart": autostart},
+            {"bond_timeout": 0.0},
+            {"attempt_respawn_reconnection": True},
+            {"node_names": ["map_server", "amcl"]},
+        ],
+    )
+
+    planner_server = Node(
+        package="nav2_planner",
+        executable="planner_server",
+        name="planner_server",
+        output="screen",
+        parameters=[params_file, {"use_sim_time": use_sim_time}],
+    )
+
+    controller_server = Node(
+        package="nav2_controller",
+        executable="controller_server",
+        name="controller_server",
+        output="screen",
+        parameters=[params_file, {"use_sim_time": use_sim_time}],
+    )
+
+    smoother_server = Node(
+        package="nav2_smoother",
+        executable="smoother_server",
+        name="smoother_server",
+        output="screen",
+        parameters=[params_file, {"use_sim_time": use_sim_time}],
+    )
+
+    behavior_server = Node(
+        package="nav2_behaviors",
+        executable="behavior_server",
+        name="behavior_server",
+        output="screen",
+        parameters=[params_file, {"use_sim_time": use_sim_time}],
+    )
+
+    waypoint_follower = Node(
+        package="nav2_waypoint_follower",
+        executable="waypoint_follower",
+        name="waypoint_follower",
+        output="screen",
+        parameters=[params_file, {"use_sim_time": use_sim_time}],
+    )
+
+    lifecycle_manager_navigation = Node(
+        package="nav2_lifecycle_manager",
+        executable="lifecycle_manager",
+        name="lifecycle_manager_navigation",
+        output="screen",
+        parameters=[
+            {"use_sim_time": use_sim_time},
+            {"autostart": autostart},
+            {"bond_timeout": 0.0},
+            {"attempt_respawn_reconnection": True},
+            {
+                "node_names": [
+                    "controller_server",
+                    "planner_server",
+                    "smoother_server",
+                    "behavior_server",
+                    "waypoint_follower",
+                ]
+            },
+        ],
     )
 
     return LaunchDescription([
@@ -73,7 +140,13 @@ def generate_launch_description():
         declare_params_file,
         declare_use_sim_time,
         declare_autostart,
-        declare_use_composition,
-        declare_use_respawn,
-        nav2_bringup,
+        map_server,
+        amcl,
+        lifecycle_manager_localization,
+        planner_server,
+        controller_server,
+        smoother_server,
+        behavior_server,
+        waypoint_follower,
+        lifecycle_manager_navigation,
     ])

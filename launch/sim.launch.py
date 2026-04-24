@@ -3,19 +3,15 @@ from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import ExecuteProcess
 from launch_ros.actions import Node
-from launch_ros.parameter_descriptions import ParameterValue
+
 
 def generate_launch_description():
-
     pkg = get_package_share_directory('warehouse_robot_comp219')
 
     world_file = os.path.join(pkg, 'worlds', 'warehouse.world')
-    urdf_file  = os.path.join(pkg, 'urdf',   'warehouse_robot.urdf')
+    urdf_file = os.path.join(pkg, 'urdf', 'warehouse_robot.urdf')
 
-    with open(urdf_file, 'r') as f:
-        robot_desc_str = f.read()
-
-    robot_description = ParameterValue(robot_desc_str, value_type=str)
+    use_sim_time = {'use_sim_time': True}
 
     gazebo = ExecuteProcess(
         cmd=['gz', 'sim', '-r', world_file],
@@ -30,28 +26,8 @@ def generate_launch_description():
             '/odom@nav_msgs/msg/Odometry[gz.msgs.Odometry',
             '/cmd_vel@geometry_msgs/msg/Twist]gz.msgs.Twist',
             '/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock',
-            '/tf@tf2_msgs/msg/TFMessage[gz.msgs.Pose_V',
-            '/world/warehouse/model/warehouse_robot/joint_state@sensor_msgs/msg/JointState[gz.msgs.Model',
         ],
-        output='screen'
-    )
-
-    robot_state_publisher = Node(
-        package='robot_state_publisher',
-        executable='robot_state_publisher',
-        parameters=[{'robot_description': robot_description,
-                     'use_sim_time': True}],
-        output='screen'
-    )
-
-    joint_state_relay = Node(
-        package='topic_tools',
-        executable='relay',
-        name='joint_state_relay',
-        arguments=[
-            '/world/warehouse/model/warehouse_robot/joint_state',
-            '/joint_states'
-        ],
+        parameters=[use_sim_time],
         output='screen'
     )
 
@@ -59,40 +35,54 @@ def generate_launch_description():
         package='ros_gz_sim',
         executable='create',
         arguments=[
-            '-name',  'warehouse_robot',
-            '-topic', 'robot_description',
+            '-name', 'warehouse_robot',
+            '-file', urdf_file,
             '-x', '-4.0',
             '-y', '-3.0',
             '-z', '0.1',
             '-Y', '0.0',
         ],
+        parameters=[use_sim_time],
         output='screen'
     )
 
-    # Static map -> odom (AMCL will override this dynamically)
-    map_to_odom = Node(
-        package='tf2_ros',
-        executable='static_transform_publisher',
-        name='map_to_odom',
-        arguments=['-4.0', '-3.0', '0', '0', '0', '0', 'map', 'odom'],
-        output='screen'
-    )
-
-    # Dynamic odom -> base_footprint from /odom topic
+    # /odom topic -> TF (odom -> base_footprint). Required by Nav2's
+    # local costmap / controller_server. Uses node clock which is sim time
+    # because use_sim_time=True.
     odom_tf = Node(
         package='warehouse_robot_comp219',
         executable='odom_tf_publisher.py',
         name='odom_tf_publisher',
-        parameters=[{'use_sim_time': True}],
+        parameters=[use_sim_time],
+        output='screen'
+    )
+
+    # Robot-internal fixed transforms. robot_state_publisher is not used here
+    # because we spawn the URDF directly via ros_gz_sim create; these mirror
+    # the fixed joints (base_footprint_joint) and lidar mounting in the URDF.
+    base_footprint_to_base_link = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='base_footprint_to_base_link',
+        arguments=['0', '0', '0.06', '0', '0', '0', 'base_footprint', 'base_link'],
+        parameters=[use_sim_time],
+        output='screen'
+    )
+
+    base_link_to_lidar = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='base_link_to_lidar',
+        arguments=['0', '0', '0.12', '0', '0', '0', 'base_link', 'lidar_link'],
+        parameters=[use_sim_time],
         output='screen'
     )
 
     return LaunchDescription([
         gazebo,
         bridge,
-        robot_state_publisher,
-        joint_state_relay,
         spawn_robot,
-        map_to_odom,
         odom_tf,
+        base_footprint_to_base_link,
+        base_link_to_lidar,
     ])
