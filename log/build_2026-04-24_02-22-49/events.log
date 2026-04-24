@@ -1,0 +1,245 @@
+[0.000000] (-) TimerEvent: {}
+[0.000571] (warehouse_robot_comp219) JobQueued: {'identifier': 'warehouse_robot_comp219', 'dependencies': OrderedDict()}
+[0.001056] (warehouse_robot_comp219) JobStarted: {'identifier': 'warehouse_robot_comp219'}
+[0.015278] (warehouse_robot_comp219) JobProgress: {'identifier': 'warehouse_robot_comp219', 'progress': 'cmake'}
+[0.016748] (warehouse_robot_comp219) Command: {'cmd': ['/usr/bin/cmake', '/root/robot_project', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/root/robot_project/install/warehouse_robot_comp219'], 'cwd': '/root/robot_project/build/warehouse_robot_comp219', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/mnt/c/Users/yaksh/AppData/Local/Programs/cursor', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'root', 'VSCODE_NLS_CONFIG': '{"userLocale":"en","osLocale":"en","resolvedLanguage":"en","defaultMessagesFile":"/root/.cursor-server/bin/fce1e9ab7844f9ea35793da01e634aa7e50bce90/out/nls.messages.json","locale":"en","availableLanguages":{}}', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'CONDA_SHLVL': '0', 'OLDPWD': '/root/robot_project', 'VSCODE_IPC_HOOK_CLI': '/run/user/0/vscode-ipc-43f6acf0-024b-4087-9d59-dc67b9c98746.sock', 'ROS_PYTHON_VERSION': '3', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/0/bus', '_CE_M': '', 'WSL_DISTRO_NAME': 'Ubuntu', '_CONDA_ROOT': '/root/anaconda3', 'WAYLAND_DISPLAY': 'wayland-0', 'VSCODE_L10N_BUNDLE_LOCATION': '', 'COLCON_PREFIX_PATH': '/root/install', 'ROS_DISTRO': 'jazzy', 'OVSX_REGISTRY_URL': 'https://open-vsx.org', 'LOGNAME': 'root', 'FORCE_COLOR': '0', 'AMENT_PYTHON_EXECUTABLE': '/usr/bin/python3', 'NAME': 'YAX', 'WSL_INTEROP': '/run/WSL/760_interop', 'VSCODE_HANDLES_SIGPIPE': 'true', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'CURSOR_LAYOUT': 'unifiedAgent', 'TERM': 'dumb', '_CE_CONDA': '', 'PATH': '/root/.cursor-server/bin/fce1e9ab7844f9ea35793da01e634aa7e50bce90:/root/.cursor-server/bin/fce1e9ab7844f9ea35793da01e634aa7e50bce90/bin/remote-cli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/root/anaconda3/condabin:/root/.cursor-server/bin/fce1e9ab7844f9ea35793da01e634aa7e50bce90/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin:/mnt/c/app/yaksh/product/21c/dbhomeXE/bin:/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/Neovim/bin:/mnt/c/Users/yaksh/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/yaksh/AppData/Local/Programs/Python/Python311/:/mnt/c/Users/yaksh/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.0.36-hotspot/bin:/mnt/c/Program Files/MongoDB/Server/8.0/bin:/mnt/c/Users/yaksh/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/yaksh/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/yaksh/.dotnet/tools:/mnt/c/Users/yaksh/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/yaksh/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/yaksh/AppData/Roaming/npm:/mnt/c/Users/yaksh/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/Program Files/JetBrains/IntelliJ IDEA 2025.2.2/bin:/mnt/c/Program Files/Graphviz/bin:/mnt/c/Users/yaksh/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts:/mnt/c/Users/yaksh/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/0/', 'CURSOR_AGENT': '1', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': '', 'AMENT_PREFIX_PATH': '/root/install/warehouse_robot_comp219:/opt/ros/jazzy', 'CONDA_PYTHON_EXE': '/root/anaconda3/bin/python', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', '_CONDA_EXE': '/root/anaconda3/bin/conda', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/root/robot_project/build/warehouse_robot_comp219', 'CONDA_EXE': '/root/anaconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', '_ZO_DOCTOR': '0', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/root/install/warehouse_robot_comp219:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[0.060890] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.099029] (-) TimerEvent: {}
+[0.199210] (-) TimerEvent: {}
+[0.299502] (-) TimerEvent: {}
+[0.334235] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.371186] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Found rclpy: 7.1.9 (/opt/ros/jazzy/share/rclpy/cmake)\n'}
+[0.372073] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.399518] (-) TimerEvent: {}
+[0.499705] (-) TimerEvent: {}
+[0.599953] (-) TimerEvent: {}
+[0.700241] (-) TimerEvent: {}
+[0.800491] (-) TimerEvent: {}
+[0.839448] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.859091] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.892840] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.900602] (-) TimerEvent: {}
+[0.920382] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.000685] (-) TimerEvent: {}
+[1.043138] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[1.048508] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.100873] (-) TimerEvent: {}
+[1.201203] (-) TimerEvent: {}
+[1.301465] (-) TimerEvent: {}
+[1.401723] (-) TimerEvent: {}
+[1.501983] (-) TimerEvent: {}
+[1.602253] (-) TimerEvent: {}
+[1.693363] (warehouse_robot_comp219) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.702402] (-) TimerEvent: {}
+[1.802775] (-) TimerEvent: {}
+[1.903167] (-) TimerEvent: {}
+[2.003368] (-) TimerEvent: {}
+[2.103573] (-) TimerEvent: {}
+[2.203786] (-) TimerEvent: {}
+[2.206671] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Found rclcpp_action: 28.1.16 (/opt/ros/jazzy/share/rclcpp_action/cmake)\n'}
+[2.281267] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Found nav2_msgs: 1.3.11 (/opt/ros/jazzy/share/nav2_msgs/cmake)\n'}
+[2.303904] (-) TimerEvent: {}
+[2.404134] (-) TimerEvent: {}
+[2.504320] (-) TimerEvent: {}
+[2.604562] (-) TimerEvent: {}
+[2.633424] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Configuring done (2.6s)\n'}
+[2.672608] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[2.682134] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Build files have been written to: /root/robot_project/build/warehouse_robot_comp219\n'}
+[2.691982] (warehouse_robot_comp219) CommandEnded: {'returncode': 0}
+[2.693593] (warehouse_robot_comp219) JobProgress: {'identifier': 'warehouse_robot_comp219', 'progress': 'build'}
+[2.693780] (warehouse_robot_comp219) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/robot_project/build/warehouse_robot_comp219', '--', '-j20', '-l20'], 'cwd': '/root/robot_project/build/warehouse_robot_comp219', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/mnt/c/Users/yaksh/AppData/Local/Programs/cursor', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'root', 'VSCODE_NLS_CONFIG': '{"userLocale":"en","osLocale":"en","resolvedLanguage":"en","defaultMessagesFile":"/root/.cursor-server/bin/fce1e9ab7844f9ea35793da01e634aa7e50bce90/out/nls.messages.json","locale":"en","availableLanguages":{}}', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'CONDA_SHLVL': '0', 'OLDPWD': '/root/robot_project', 'VSCODE_IPC_HOOK_CLI': '/run/user/0/vscode-ipc-43f6acf0-024b-4087-9d59-dc67b9c98746.sock', 'ROS_PYTHON_VERSION': '3', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/0/bus', '_CE_M': '', 'WSL_DISTRO_NAME': 'Ubuntu', '_CONDA_ROOT': '/root/anaconda3', 'WAYLAND_DISPLAY': 'wayland-0', 'VSCODE_L10N_BUNDLE_LOCATION': '', 'COLCON_PREFIX_PATH': '/root/install', 'ROS_DISTRO': 'jazzy', 'OVSX_REGISTRY_URL': 'https://open-vsx.org', 'LOGNAME': 'root', 'FORCE_COLOR': '0', 'AMENT_PYTHON_EXECUTABLE': '/usr/bin/python3', 'NAME': 'YAX', 'WSL_INTEROP': '/run/WSL/760_interop', 'VSCODE_HANDLES_SIGPIPE': 'true', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'CURSOR_LAYOUT': 'unifiedAgent', 'TERM': 'dumb', '_CE_CONDA': '', 'PATH': '/root/.cursor-server/bin/fce1e9ab7844f9ea35793da01e634aa7e50bce90:/root/.cursor-server/bin/fce1e9ab7844f9ea35793da01e634aa7e50bce90/bin/remote-cli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/root/anaconda3/condabin:/root/.cursor-server/bin/fce1e9ab7844f9ea35793da01e634aa7e50bce90/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin:/mnt/c/app/yaksh/product/21c/dbhomeXE/bin:/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/Neovim/bin:/mnt/c/Users/yaksh/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/yaksh/AppData/Local/Programs/Python/Python311/:/mnt/c/Users/yaksh/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.0.36-hotspot/bin:/mnt/c/Program Files/MongoDB/Server/8.0/bin:/mnt/c/Users/yaksh/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/yaksh/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/yaksh/.dotnet/tools:/mnt/c/Users/yaksh/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/yaksh/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/yaksh/AppData/Roaming/npm:/mnt/c/Users/yaksh/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/Program Files/JetBrains/IntelliJ IDEA 2025.2.2/bin:/mnt/c/Program Files/Graphviz/bin:/mnt/c/Users/yaksh/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts:/mnt/c/Users/yaksh/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/0/', 'CURSOR_AGENT': '1', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': '', 'AMENT_PREFIX_PATH': '/root/install/warehouse_robot_comp219:/opt/ros/jazzy', 'CONDA_PYTHON_EXE': '/root/anaconda3/bin/python', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', '_CONDA_EXE': '/root/anaconda3/bin/conda', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/root/robot_project/build/warehouse_robot_comp219', 'CONDA_EXE': '/root/anaconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', '_ZO_DOCTOR': '0', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/root/install/warehouse_robot_comp219:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[2.704705] (-) TimerEvent: {}
+[2.761139] (warehouse_robot_comp219) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o\n'}
+[2.804842] (-) TimerEvent: {}
+[2.905096] (-) TimerEvent: {}
+[3.005339] (-) TimerEvent: {}
+[3.105548] (-) TimerEvent: {}
+[3.205797] (-) TimerEvent: {}
+[3.306016] (-) TimerEvent: {}
+[3.406254] (-) TimerEvent: {}
+[3.506481] (-) TimerEvent: {}
+[3.606705] (-) TimerEvent: {}
+[3.706952] (-) TimerEvent: {}
+[3.807140] (-) TimerEvent: {}
+[3.907396] (-) TimerEvent: {}
+[4.007661] (-) TimerEvent: {}
+[4.107896] (-) TimerEvent: {}
+[4.208150] (-) TimerEvent: {}
+[4.308368] (-) TimerEvent: {}
+[4.408573] (-) TimerEvent: {}
+[4.508832] (-) TimerEvent: {}
+[4.609076] (-) TimerEvent: {}
+[4.709276] (-) TimerEvent: {}
+[4.809631] (-) TimerEvent: {}
+[4.909946] (-) TimerEvent: {}
+[5.010174] (-) TimerEvent: {}
+[5.110399] (-) TimerEvent: {}
+[5.210617] (-) TimerEvent: {}
+[5.310879] (-) TimerEvent: {}
+[5.411185] (-) TimerEvent: {}
+[5.511414] (-) TimerEvent: {}
+[5.611700] (-) TimerEvent: {}
+[5.711964] (-) TimerEvent: {}
+[5.812272] (-) TimerEvent: {}
+[5.912523] (-) TimerEvent: {}
+[6.012805] (-) TimerEvent: {}
+[6.113059] (-) TimerEvent: {}
+[6.213276] (-) TimerEvent: {}
+[6.313523] (-) TimerEvent: {}
+[6.413778] (-) TimerEvent: {}
+[6.514075] (-) TimerEvent: {}
+[6.614293] (-) TimerEvent: {}
+[6.714519] (-) TimerEvent: {}
+[6.814769] (-) TimerEvent: {}
+[6.915038] (-) TimerEvent: {}
+[7.015236] (-) TimerEvent: {}
+[7.115531] (-) TimerEvent: {}
+[7.215798] (-) TimerEvent: {}
+[7.316025] (-) TimerEvent: {}
+[7.416301] (-) TimerEvent: {}
+[7.516593] (-) TimerEvent: {}
+[7.616808] (-) TimerEvent: {}
+[7.717053] (-) TimerEvent: {}
+[7.817342] (-) TimerEvent: {}
+[7.917538] (-) TimerEvent: {}
+[8.017754] (-) TimerEvent: {}
+[8.118089] (-) TimerEvent: {}
+[8.218267] (-) TimerEvent: {}
+[8.318500] (-) TimerEvent: {}
+[8.418724] (-) TimerEvent: {}
+[8.518929] (-) TimerEvent: {}
+[8.619203] (-) TimerEvent: {}
+[8.719437] (-) TimerEvent: {}
+[8.819699] (-) TimerEvent: {}
+[8.919996] (-) TimerEvent: {}
+[9.020415] (-) TimerEvent: {}
+[9.120657] (-) TimerEvent: {}
+[9.220897] (-) TimerEvent: {}
+[9.321146] (-) TimerEvent: {}
+[9.421447] (-) TimerEvent: {}
+[9.524176] (-) TimerEvent: {}
+[9.624518] (-) TimerEvent: {}
+[9.724950] (-) TimerEvent: {}
+[9.825218] (-) TimerEvent: {}
+[9.925617] (-) TimerEvent: {}
+[10.025830] (-) TimerEvent: {}
+[10.126038] (-) TimerEvent: {}
+[10.226230] (-) TimerEvent: {}
+[10.326509] (-) TimerEvent: {}
+[10.426765] (-) TimerEvent: {}
+[10.527132] (-) TimerEvent: {}
+[10.627384] (-) TimerEvent: {}
+[10.727522] (-) TimerEvent: {}
+[10.827799] (-) TimerEvent: {}
+[10.928133] (-) TimerEvent: {}
+[11.028352] (-) TimerEvent: {}
+[11.128574] (-) TimerEvent: {}
+[11.228773] (-) TimerEvent: {}
+[11.329160] (-) TimerEvent: {}
+[11.429342] (-) TimerEvent: {}
+[11.529544] (-) TimerEvent: {}
+[11.629818] (-) TimerEvent: {}
+[11.730077] (-) TimerEvent: {}
+[11.830282] (-) TimerEvent: {}
+[11.931202] (-) TimerEvent: {}
+[12.031463] (-) TimerEvent: {}
+[12.131756] (-) TimerEvent: {}
+[12.231970] (-) TimerEvent: {}
+[12.332355] (-) TimerEvent: {}
+[12.432611] (-) TimerEvent: {}
+[12.532829] (-) TimerEvent: {}
+[12.633123] (-) TimerEvent: {}
+[12.733397] (-) TimerEvent: {}
+[12.833661] (-) TimerEvent: {}
+[12.933925] (-) TimerEvent: {}
+[13.034142] (-) TimerEvent: {}
+[13.134531] (-) TimerEvent: {}
+[13.234803] (-) TimerEvent: {}
+[13.335049] (-) TimerEvent: {}
+[13.435274] (-) TimerEvent: {}
+[13.535522] (-) TimerEvent: {}
+[13.635891] (-) TimerEvent: {}
+[13.736129] (-) TimerEvent: {}
+[13.836352] (-) TimerEvent: {}
+[13.936585] (-) TimerEvent: {}
+[14.036825] (-) TimerEvent: {}
+[14.137075] (-) TimerEvent: {}
+[14.237268] (-) TimerEvent: {}
+[14.337526] (-) TimerEvent: {}
+[14.437750] (-) TimerEvent: {}
+[14.537966] (-) TimerEvent: {}
+[14.638205] (-) TimerEvent: {}
+[14.738444] (-) TimerEvent: {}
+[14.838659] (-) TimerEvent: {}
+[14.938877] (-) TimerEvent: {}
+[15.039087] (-) TimerEvent: {}
+[15.139299] (-) TimerEvent: {}
+[15.239578] (-) TimerEvent: {}
+[15.339817] (-) TimerEvent: {}
+[15.440089] (-) TimerEvent: {}
+[15.540384] (-) TimerEvent: {}
+[15.640618] (-) TimerEvent: {}
+[15.740882] (-) TimerEvent: {}
+[15.841175] (-) TimerEvent: {}
+[15.941429] (-) TimerEvent: {}
+[16.041623] (-) TimerEvent: {}
+[16.141915] (-) TimerEvent: {}
+[16.244298] (-) TimerEvent: {}
+[16.344480] (-) TimerEvent: {}
+[16.444670] (-) TimerEvent: {}
+[16.544928] (-) TimerEvent: {}
+[16.645295] (-) TimerEvent: {}
+[16.745560] (-) TimerEvent: {}
+[16.845764] (-) TimerEvent: {}
+[16.946082] (-) TimerEvent: {}
+[17.046336] (-) TimerEvent: {}
+[17.080845] (warehouse_robot_comp219) StdoutLine: {'line': b'[100%] Linking CXX executable nav_menu_client\n'}
+[17.146432] (-) TimerEvent: {}
+[17.246657] (-) TimerEvent: {}
+[17.347925] (-) TimerEvent: {}
+[17.448657] (-) TimerEvent: {}
+[17.548998] (-) TimerEvent: {}
+[17.649219] (-) TimerEvent: {}
+[17.749502] (-) TimerEvent: {}
+[17.849728] (-) TimerEvent: {}
+[17.860741] (warehouse_robot_comp219) StdoutLine: {'line': b'[100%] Built target nav_menu_client\n'}
+[17.872059] (warehouse_robot_comp219) CommandEnded: {'returncode': 0}
+[17.873113] (warehouse_robot_comp219) JobProgress: {'identifier': 'warehouse_robot_comp219', 'progress': 'install'}
+[17.882789] (warehouse_robot_comp219) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/robot_project/build/warehouse_robot_comp219'], 'cwd': '/root/robot_project/build/warehouse_robot_comp219', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/mnt/c/Users/yaksh/AppData/Local/Programs/cursor', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'root', 'VSCODE_NLS_CONFIG': '{"userLocale":"en","osLocale":"en","resolvedLanguage":"en","defaultMessagesFile":"/root/.cursor-server/bin/fce1e9ab7844f9ea35793da01e634aa7e50bce90/out/nls.messages.json","locale":"en","availableLanguages":{}}', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'CONDA_SHLVL': '0', 'OLDPWD': '/root/robot_project', 'VSCODE_IPC_HOOK_CLI': '/run/user/0/vscode-ipc-43f6acf0-024b-4087-9d59-dc67b9c98746.sock', 'ROS_PYTHON_VERSION': '3', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/0/bus', '_CE_M': '', 'WSL_DISTRO_NAME': 'Ubuntu', '_CONDA_ROOT': '/root/anaconda3', 'WAYLAND_DISPLAY': 'wayland-0', 'VSCODE_L10N_BUNDLE_LOCATION': '', 'COLCON_PREFIX_PATH': '/root/install', 'ROS_DISTRO': 'jazzy', 'OVSX_REGISTRY_URL': 'https://open-vsx.org', 'LOGNAME': 'root', 'FORCE_COLOR': '0', 'AMENT_PYTHON_EXECUTABLE': '/usr/bin/python3', 'NAME': 'YAX', 'WSL_INTEROP': '/run/WSL/760_interop', 'VSCODE_HANDLES_SIGPIPE': 'true', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'CURSOR_LAYOUT': 'unifiedAgent', 'TERM': 'dumb', '_CE_CONDA': '', 'PATH': '/root/.cursor-server/bin/fce1e9ab7844f9ea35793da01e634aa7e50bce90:/root/.cursor-server/bin/fce1e9ab7844f9ea35793da01e634aa7e50bce90/bin/remote-cli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/root/anaconda3/condabin:/root/.cursor-server/bin/fce1e9ab7844f9ea35793da01e634aa7e50bce90/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.16.8-hotspot/bin:/mnt/c/app/yaksh/product/21c/dbhomeXE/bin:/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/Neovim/bin:/mnt/c/Users/yaksh/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/yaksh/AppData/Local/Programs/Python/Python311/:/mnt/c/Users/yaksh/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.0.36-hotspot/bin:/mnt/c/Program Files/MongoDB/Server/8.0/bin:/mnt/c/Users/yaksh/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/yaksh/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/yaksh/.dotnet/tools:/mnt/c/Users/yaksh/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/yaksh/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/yaksh/AppData/Roaming/npm:/mnt/c/Users/yaksh/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/Program Files/JetBrains/IntelliJ IDEA 2025.2.2/bin:/mnt/c/Program Files/Graphviz/bin:/mnt/c/Users/yaksh/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts:/mnt/c/Users/yaksh/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/0/', 'CURSOR_AGENT': '1', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': '', 'AMENT_PREFIX_PATH': '/root/install/warehouse_robot_comp219:/opt/ros/jazzy', 'CONDA_PYTHON_EXE': '/root/anaconda3/bin/python', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', '_CONDA_EXE': '/root/anaconda3/bin/conda', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/root/robot_project/build/warehouse_robot_comp219', 'CONDA_EXE': '/root/anaconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', '_ZO_DOCTOR': '0', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/root/install/warehouse_robot_comp219:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': ''}), 'shell': False}
+[17.890970] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[17.891379] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[17.891690] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Symlinking: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/worlds/warehouse.world\n'}
+[17.901162] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Symlinking: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/urdf/warehouse_robot.urdf\n'}
+[17.909934] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Symlinking: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/urdf/warehouse_robot.urdf.xacro\n'}
+[17.919208] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Symlinking: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/launch/nav2.launch.py\n'}
+[17.926803] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Symlinking: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/launch/sim.launch.py\n'}
+[17.937613] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Symlinking: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/launch/slam.launch.py\n'}
+[17.948164] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Symlinking: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/config/nav2_params.yaml\n'}
+[17.949845] (-) TimerEvent: {}
+[17.958742] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Symlinking: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/config/ros_gz_bridge.yaml\n'}
+[17.968331] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Symlinking: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/config/slam_toolbox.yaml\n'}
+[17.976987] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Symlinking: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/maps/warehouse_map.pgm\n'}
+[17.986224] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Symlinking: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/maps/warehouse_map.yaml\n'}
+[17.996443] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Symlinking: /root/robot_project/install/warehouse_robot_comp219/lib/warehouse_robot_comp219/odom_tf_publisher.py\n'}
+[18.006797] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Symlinking: /root/robot_project/install/warehouse_robot_comp219/lib/warehouse_robot_comp219/ai_nav_client.py\n'}
+[18.017147] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Symlinking: /root/robot_project/install/warehouse_robot_comp219/lib/warehouse_robot_comp219/nav_menu_client\n'}
+[18.031618] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Symlinking: /root/robot_project/install/warehouse_robot_comp219/share/ament_index/resource_index/package_run_dependencies/warehouse_robot_comp219\n'}
+[18.041172] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Symlinking: /root/robot_project/install/warehouse_robot_comp219/share/ament_index/resource_index/parent_prefix_path/warehouse_robot_comp219\n'}
+[18.049899] (-) TimerEvent: {}
+[18.051095] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Symlinking: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/environment/ament_prefix_path.sh\n'}
+[18.061752] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Symlinking: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/environment/ament_prefix_path.dsv\n'}
+[18.074304] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Symlinking: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/environment/path.sh\n'}
+[18.086544] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Symlinking: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/environment/path.dsv\n'}
+[18.099018] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Symlinking: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/local_setup.bash\n'}
+[18.108600] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Symlinking: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/local_setup.sh\n'}
+[18.119961] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Symlinking: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/local_setup.zsh\n'}
+[18.128736] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Symlinking: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/local_setup.dsv\n'}
+[18.139242] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Symlinking: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/package.dsv\n'}
+[18.149062] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Symlinking: /root/robot_project/install/warehouse_robot_comp219/share/ament_index/resource_index/packages/warehouse_robot_comp219\n'}
+[18.149966] (-) TimerEvent: {}
+[18.157264] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Symlinking: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/cmake/warehouse_robot_comp219Config.cmake\n'}
+[18.166538] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Symlinking: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/cmake/warehouse_robot_comp219Config-version.cmake\n'}
+[18.176159] (warehouse_robot_comp219) StdoutLine: {'line': b'-- Symlinking: /root/robot_project/install/warehouse_robot_comp219/share/warehouse_robot_comp219/package.xml\n'}
+[18.187763] (warehouse_robot_comp219) CommandEnded: {'returncode': 0}
+[18.208555] (warehouse_robot_comp219) JobEnded: {'identifier': 'warehouse_robot_comp219', 'rc': 0}
+[18.209545] (-) EventReactorShutdown: {}

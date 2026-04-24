@@ -23,6 +23,7 @@ install(DIRECTORY worlds urdf launch config maps
 
 install(PROGRAMS
   warehouse_robot_comp219/odom_tf_publisher.py
+  warehouse_robot_comp219/ai_nav_client.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

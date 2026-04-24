@@ -1,2 +1,1 @@
-source;share/warehouse_robot_comp219/environment/ament_prefix_path.sh
-source;share/warehouse_robot_comp219/environment/path.sh
+/root/robot_project/build/warehouse_robot_comp219/ament_cmake_environment_hooks/local_setup.dsv

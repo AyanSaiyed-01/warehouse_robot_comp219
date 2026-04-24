@@ -59,8 +59,16 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__traits.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__builder.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__struct.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__traits.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__type_support.hpp
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/pose_with_covariance_stamped.hpp
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
  /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp
  /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp
  /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp
@@ -87,6 +95,11 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o
  /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/follow_path.hpp
  /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/navigate_to_pose.hpp
  /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+ /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/srv/detail/manage_lifecycle_nodes__builder.hpp
+ /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/srv/detail/manage_lifecycle_nodes__struct.hpp
+ /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/srv/detail/manage_lifecycle_nodes__traits.hpp
+ /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/srv/detail/manage_lifecycle_nodes__type_support.hpp
+ /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/srv/manage_lifecycle_nodes.hpp
  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/path__struct.hpp
  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/path__traits.hpp
  /opt/ros/jazzy/include/rcl/rcl/allocator.h

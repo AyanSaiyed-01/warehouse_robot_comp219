@@ -196,8 +196,8 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/compute_path_to_pose.hpp \
- /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/compute_path_to_pose__struct.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/pose_with_covariance_stamped.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__struct.hpp \
  /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algo.h \
  /usr/include/c++/13/bits/algorithmfwd.h \
  /usr/include/c++/13/bits/stl_heap.h \
@@ -208,21 +208,14 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: \
  /usr/include/c++/13/utility /usr/include/c++/13/bits/stl_relops.h \
  /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_initialization.hpp \
  /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
- /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp \
- /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/path__struct.hpp \
- /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp \
- /opt/ros/jazzy/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.hpp \
- /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp \
- /opt/ros/jazzy/include/action_msgs/action_msgs/srv/cancel_goal.hpp \
- /opt/ros/jazzy/include/action_msgs/action_msgs/srv/detail/cancel_goal__struct.hpp \
- /opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_info__struct.hpp \
- /opt/ros/jazzy/include/action_msgs/action_msgs/srv/detail/cancel_goal__builder.hpp \
- /opt/ros/jazzy/include/action_msgs/action_msgs/srv/detail/cancel_goal__traits.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__builder.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__traits.hpp \
  /usr/include/c++/13/sstream /usr/include/c++/13/bits/sstream.tcc \
  /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp \
  /usr/include/c++/13/codecvt /usr/include/c++/13/bits/codecvt.h \
@@ -233,24 +226,19 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: \
  /usr/include/libintl.h /usr/include/c++/13/bits/locale_facets_nonio.tcc \
  /usr/include/c++/13/bits/locale_conv.h \
  /usr/include/c++/13/bits/quoted_string.h \
- /opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_info__traits.hpp \
- /opt/ros/jazzy/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__traits.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
- /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__traits.hpp \
- /opt/ros/jazzy/include/action_msgs/action_msgs/srv/detail/cancel_goal__type_support.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__type_support.hpp \
  /opt/ros/jazzy/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
- /opt/ros/jazzy/include/action_msgs/action_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
- /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp \
- /usr/include/c++/13/cstring /usr/include/string.h /usr/include/strings.h \
- /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
- /opt/ros/jazzy/include/rcutils/rcutils/allocator.h \
- /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
- /opt/ros/jazzy/include/rcutils/rcutils/macros.h \
- /opt/ros/jazzy/include/rcutils/rcutils/types/rcutils_ret.h \
- /opt/ros/jazzy/include/rcutils/rcutils/visibility_control.h \
- /opt/ros/jazzy/include/rcutils/rcutils/visibility_control_macros.h \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
  /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
  /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_description__struct.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
  /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/individual_type_description__struct.h \
  /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
  /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
@@ -258,9 +246,33 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: \
  /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/field_type__struct.h \
  /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_source__struct.h \
  /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_hash.h \
+ /opt/ros/jazzy/include/rcutils/rcutils/allocator.h \
+ /opt/ros/jazzy/include/rcutils/rcutils/macros.h \
+ /opt/ros/jazzy/include/rcutils/rcutils/types/rcutils_ret.h \
+ /opt/ros/jazzy/include/rcutils/rcutils/visibility_control.h \
+ /opt/ros/jazzy/include/rcutils/rcutils/visibility_control_macros.h \
  /opt/ros/jazzy/include/rcutils/rcutils/sha256.h \
  /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
- /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
+ /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/compute_path_to_pose.hpp \
+ /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/compute_path_to_pose__struct.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp \
+ /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/path__struct.hpp \
+ /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp \
+ /opt/ros/jazzy/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.hpp \
+ /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp \
+ /opt/ros/jazzy/include/action_msgs/action_msgs/srv/cancel_goal.hpp \
+ /opt/ros/jazzy/include/action_msgs/action_msgs/srv/detail/cancel_goal__struct.hpp \
+ /opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_info__struct.hpp \
+ /opt/ros/jazzy/include/action_msgs/action_msgs/srv/detail/cancel_goal__builder.hpp \
+ /opt/ros/jazzy/include/action_msgs/action_msgs/srv/detail/cancel_goal__traits.hpp \
+ /opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_info__traits.hpp \
+ /opt/ros/jazzy/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__traits.hpp \
+ /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__traits.hpp \
+ /opt/ros/jazzy/include/action_msgs/action_msgs/srv/detail/cancel_goal__type_support.hpp \
+ /opt/ros/jazzy/include/action_msgs/action_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp \
+ /usr/include/c++/13/cstring /usr/include/string.h /usr/include/strings.h \
+ /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
  /opt/ros/jazzy/include/action_msgs/action_msgs/msg/goal_info.hpp \
  /opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_info__builder.hpp \
  /opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_info__type_support.hpp \
@@ -274,10 +286,6 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: \
  /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/compute_path_to_pose__builder.hpp \
  /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/compute_path_to_pose__traits.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__traits.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
- /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp \
- /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp \
- /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/path__traits.hpp \
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp \
  /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/compute_path_to_pose__type_support.hpp \
@@ -296,6 +304,11 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: \
  /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__builder.hpp \
  /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__traits.hpp \
  /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__type_support.hpp \
+ /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/srv/manage_lifecycle_nodes.hpp \
+ /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/srv/detail/manage_lifecycle_nodes__struct.hpp \
+ /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/srv/detail/manage_lifecycle_nodes__builder.hpp \
+ /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/srv/detail/manage_lifecycle_nodes__traits.hpp \
+ /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/srv/detail/manage_lifecycle_nodes__type_support.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/13/csignal /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \

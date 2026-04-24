@@ -58,8 +58,16 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__builder.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__struct.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__type_support.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/pose_with_covariance_stamped.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp \
   /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp \
   /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp \
@@ -86,6 +94,11 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
   /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/follow_path.hpp \
   /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/navigate_to_pose.hpp \
   /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/srv/detail/manage_lifecycle_nodes__builder.hpp \
+  /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/srv/detail/manage_lifecycle_nodes__struct.hpp \
+  /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/srv/detail/manage_lifecycle_nodes__traits.hpp \
+  /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/srv/detail/manage_lifecycle_nodes__type_support.hpp \
+  /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/srv/manage_lifecycle_nodes.hpp \
   /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/path__struct.hpp \
   /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/path__traits.hpp \
   /opt/ros/jazzy/include/rcl/rcl/allocator.h \
@@ -1150,8 +1163,6 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 
 /usr/include/c++/13/bits/unordered_set.h:
 
-/usr/include/c++/13/bits/unique_ptr.h:
-
 /usr/include/c++/13/bits/unique_lock.h:
 
 /usr/include/c++/13/bits/uniform_int_dist.h:
@@ -1222,8 +1233,6 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 
 /usr/include/c++/13/bits/quoted_string.h:
 
-/usr/include/c++/13/bits/ptr_traits.h:
-
 /usr/include/c++/13/bits/parse_numbers.h:
 
 /usr/include/c++/13/system_error:
@@ -1248,15 +1257,27 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 
 /usr/include/c++/13/bits/locale_facets.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/function_traits.hpp:
+/usr/include/c++/13/bits/locale_classes.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/executors/executor_entities_collection.hpp:
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
-/opt/ros/jazzy/include/rclcpp_action/rclcpp_action/create_client.hpp:
+/usr/include/features-time64.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/executors/events_executor/events_queue.hpp:
+/usr/include/c++/13/type_traits:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/parameter.hpp:
+/usr/include/c++/13/bits/list.tcc:
+
+/usr/include/c++/13/bits/istream.tcc:
+
+/usr/include/c++/13/bits/ios_base.h:
+
+/usr/include/c++/13/bits/invoke.h:
+
+/usr/include/c++/13/bits/hashtable.h:
+
+/usr/include/c++/13/bits/functional_hash.h:
+
+/usr/include/c++/13/bits/functexcept.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/experimental/buffers/ring_buffer_implementation.hpp:
 
@@ -1273,6 +1294,12 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 /usr/include/c++/13/ostream:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/executors/executor_entities_collection.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/function_traits.hpp:
+
+/opt/ros/jazzy/include/rclcpp_action/rclcpp_action/create_client.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/executor_options.hpp:
 
@@ -1312,10 +1339,6 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 
 /opt/ros/jazzy/include/rcl_action/rcl_action/goal_handle.h:
 
-/usr/include/pthread.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/executors/events_executor/simple_events_queue.hpp:
-
 /opt/ros/jazzy/include/rclcpp/rclcpp/detail/qos_parameters.hpp:
 
 /usr/include/c++/13/list:
@@ -1330,8 +1353,6 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__struct.hpp:
 
-/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp:
-
 /opt/ros/jazzy/include/rclcpp/rclcpp/create_generic_publisher.hpp:
 
 /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/path__traits.hpp:
@@ -1342,15 +1363,9 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 
 /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_period.hpp:
 
-/usr/include/c++/13/bits/atomic_futex.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/callback_group.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/sigaction.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface_traits.hpp:
-
-/opt/ros/jazzy/include/rcl/rcl/init_options.h:
 
 /opt/ros/jazzy/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h:
 
@@ -1360,11 +1375,13 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/c++/13/bits/locale_conv.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp:
+
 /opt/ros/jazzy/include/rcutils/rcutils/types/array_list.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp:
-
-/opt/ros/jazzy/include/rmw/rmw/qos_policy_kind.h:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp:
 
@@ -1374,17 +1391,11 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 
 /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp:
 
-/usr/include/c++/13/iosfwd:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp:
-
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/detail/cpp_callback_trampoline.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/generic_subscription.hpp:
 
 /usr/include/c++/13/bits/unordered_map.h:
 
@@ -1405,6 +1416,8 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/describe_parameters.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/detail/rmw_implementation_specific_payload.hpp:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
 
@@ -1478,11 +1491,35 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp:
 
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/dynamic_typesupport/dynamic_message.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp:
+
+/usr/include/c++/13/cctype:
+
+/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/rate.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/node_options.h:
+
+/opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/visibility_control.h:
+
+/opt/ros/jazzy/include/rcl_action/rcl_action/visibility_control.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/create_client.hpp:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/timer.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/ros_message_intra_process_buffer.hpp:
 
 /opt/ros/jazzy/include/rcl/rcl/graph.h:
 
@@ -1492,21 +1529,9 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 
 /opt/ros/jazzy/include/rcpputils/rcpputils/shared_library.hpp:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h:
-
-/opt/ros/jazzy/include/rmw/rmw/impl/config.h:
-
-/usr/include/c++/13/bits/ios_base.h:
-
 /usr/include/c++/13/bits/exception_defines.h:
 
 /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:
-
-/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp:
-
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/sequence_bound.h:
-
-/opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/api/dynamic_data.h:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
@@ -1516,9 +1541,15 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 
 /opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_status_array__builder.hpp:
 
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:
+
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/contexts/default_context.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/service_introspection.h:
+
+/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/time.hpp:
 
 /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/compute_path_to_pose__type_support.hpp:
 
@@ -1526,19 +1557,21 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:
 
-/usr/include/x86_64-linux-gnu/sys/types.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/generic_client.hpp:
-
-/usr/include/c++/13/initializer_list:
-
-/opt/ros/jazzy/include/rcutils/rcutils/testing/fault_injection.h:
-
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /opt/ros/jazzy/include/rmw/rmw/incompatible_qos_events_statuses.h:
 
 /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/rosidl_generator_c__visibility_control.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp:
+
+/opt/ros/jazzy/include/rmw/rmw/qos_policy_kind.h:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__builder.hpp:
+
+/usr/include/c++/13/tr1/legendre_function.tcc:
+
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/field__struct.h:
 
 /opt/ros/jazzy/include/action_msgs/action_msgs/srv/detail/cancel_goal__type_support.hpp:
 
@@ -1562,9 +1595,19 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp:
 
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
 /opt/ros/jazzy/include/rcpputils/rcpputils/scope_exit.hpp:
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_hash.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/usr/include/c++/13/bits/this_thread_sleep.h:
+
+/usr/include/c++/13/bits/exception_ptr.h:
+
+/opt/ros/jazzy/include/action_msgs/action_msgs/srv/detail/cancel_goal__traits.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/create_generic_subscription.hpp:
 
@@ -1577,6 +1620,10 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 /opt/ros/jazzy/include/action_msgs/action_msgs/srv/detail/cancel_goal__struct.hpp:
 
 /opt/ros/jazzy/include/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp/visibility_control.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp:
 
 /opt/ros/jazzy/include/tracetools/tracetools/visibility_control.hpp:
 
@@ -1624,14 +1671,6 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 
 /opt/ros/jazzy/include/rmw/rmw/visibility_control.h:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp:
-
-/opt/ros/jazzy/include/rcl/rcl/node_options.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp:
-
-/opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/visibility_control.h:
-
 /usr/include/c++/13/tr1/exp_integral.tcc:
 
 /opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_status_array__traits.hpp:
@@ -1643,6 +1682,22 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 /opt/ros/jazzy/include/rcutils/rcutils/shared_library.h:
 
 /usr/include/c++/13/bits/cxxabi_forced.h:
+
+/opt/ros/jazzy/include/rcl_action/rcl_action/goal_state_machine.h:
+
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h:
+
+/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/field__struct.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
+/opt/ros/jazzy/include/action_msgs/action_msgs/srv/cancel_goal.hpp:
+
+/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp:
+
+/opt/ros/jazzy/include/rmw/rmw/events_statuses/offered_deadline_missed.h:
+
+/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/srv/detail/manage_lifecycle_nodes__struct.hpp:
 
 /opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_status__traits.hpp:
 
@@ -1662,11 +1717,7 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 
 /opt/ros/jazzy/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/subscription_intra_process.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_timers_interface_traits.hpp:
+/opt/ros/jazzy/include/rcl/rcl/init_options.h:
 
 /usr/include/c++/13/bits/streambuf_iterator.h:
 
@@ -1698,10 +1749,6 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 
 /opt/ros/jazzy/include/rcl/rcl/event.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/dynamic_typesupport/dynamic_message.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp:
-
 /usr/include/c++/13/csignal:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp:
@@ -1712,19 +1759,13 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 
 /opt/ros/jazzy/include/rcl/rcl/node.h:
 
-/usr/include/c++/13/cctype:
-
-/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/rate.hpp:
-
 /opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_info__traits.hpp:
 
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/subscription.hpp:
+
+/opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp:
 
 /opt/ros/jazzy/include/rcl/rcl/time.h:
 
@@ -1758,9 +1799,17 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 
 /opt/ros/jazzy/include/action_msgs/action_msgs/msg/goal_info.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp:
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp:
 
-/opt/ros/jazzy/include/rmw/rmw/event_callback_type.h:
+/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/srv/detail/manage_lifecycle_nodes__builder.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+
+/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/any_executable.hpp:
+
+/opt/ros/jazzy/include/rmw/rmw/features.h:
 
 /usr/include/c++/13/tr1/gamma.tcc:
 
@@ -1768,15 +1817,45 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 
 /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/c++/13/bits/this_thread_sleep.h:
-
-/opt/ros/jazzy/include/action_msgs/action_msgs/srv/detail/cancel_goal__traits.hpp:
-
-/usr/include/c++/13/bits/exception_ptr.h:
-
 /opt/ros/jazzy/include/action_msgs/action_msgs/msg/goal_status.h:
+
+/usr/include/c++/13/bits/cpp_type_traits.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/create_service.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/allocator.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__builder.hpp:
+
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_description__struct.h:
+
+/usr/include/c++/13/bits/unique_ptr.h:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__traits.hpp:
+
+/usr/include/c++/13/bits/stl_multimap.h:
+
+/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/follow_path__traits.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp:
+
+/opt/ros/jazzy/include/rcl_action/rcl_action/action_client.h:
+
+/usr/include/c++/13/initializer_list:
+
+/opt/ros/jazzy/include/rcutils/rcutils/testing/fault_injection.h:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp:
+
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/sequence_bound.h:
+
+/opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/api/dynamic_data.h:
+
+/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp:
 
@@ -1784,7 +1863,17 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp:
 
+/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/srv/detail/manage_lifecycle_nodes__traits.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/macros.h:
+
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/error_handling.h:
 
 /opt/ros/jazzy/include/action_msgs/action_msgs/msg/goal_status_array.h:
 
@@ -1793,14 +1882,6 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
 
 /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:
-
-/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
-
-/opt/ros/jazzy/include/action_msgs/action_msgs/srv/cancel_goal.hpp:
-
-/opt/ros/jazzy/include/rmw/rmw/events_statuses/offered_deadline_missed.h:
 
 /usr/include/c++/13/iostream:
 
@@ -1822,12 +1903,6 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 
 /opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_info__type_support.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:
-
-/opt/ros/jazzy/include/rcl/rcl/macros.h:
-
-/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
 /usr/include/c++/13/numeric:
@@ -1836,35 +1911,15 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 
 /root/robot_project/src/nav_menu.cpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/future_return_code.hpp:
-
 /opt/ros/jazzy/include/rclcpp/rclcpp/clock.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/future_return_code.hpp:
 
 /opt/ros/jazzy/include/rcutils/rcutils/types.h:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp:
 
 /opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_info__type_support.h:
-
-/usr/include/c++/13/bits/stl_multimap.h:
-
-/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/follow_path__traits.hpp:
-
-/opt/ros/jazzy/include/rcl/rcl/guard_condition.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/timers_manager.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp:
-
-/opt/ros/jazzy/include/rcl/rcl/error_handling.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp:
-
-/opt/ros/jazzy/include/rcl_action/rcl_action/action_client.h:
 
 /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/follow_path__type_support.hpp:
 
@@ -1904,6 +1959,30 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 
 /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/navigate_to_pose__type_support.hpp:
 
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp:
+
+/usr/include/c++/13/bits/chrono.h:
+
+/opt/ros/jazzy/include/rcl_action/rcl_action/types.h:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp:
+
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
+
+/usr/include/c++/13/pstl/execution_defs.h:
+
+/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp:
+
+/usr/include/c++/13/bits/ptr_traits.h:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__type_support.hpp:
+
+/usr/include/c++/13/bits/new_allocator.h:
+
+/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/follow_path__struct.hpp:
+
+/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/navigate_to_pose.hpp:
+
 /opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_status__functions.h:
 
 /opt/ros/jazzy/include/rmw/rmw/discovery_options.h:
@@ -1916,25 +1995,21 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:
 
+/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/srv/detail/manage_lifecycle_nodes__type_support.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/executors/static_single_threaded_executor.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/guard_condition.h:
+
+/usr/include/c++/13/iosfwd:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp:
+
+/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/srv/manage_lifecycle_nodes.hpp:
+
 /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_age.hpp:
 
 /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/path__struct.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/create_service.hpp:
-
-/opt/ros/jazzy/include/rcl/rcl/allocator.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/subscription_intra_process_base.hpp:
-
-/opt/ros/jazzy/include/rcpputils/rcpputils/thread_safety_annotations.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__builder.hpp:
-
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_description__struct.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/executors/static_single_threaded_executor.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp:
 
@@ -1950,17 +2025,15 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 
 /opt/ros/jazzy/include/rcl/rcl/logging_rosout.h:
 
+/usr/include/c++/13/bits/hash_bytes.h:
+
+/opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_info__functions.h:
+
 /usr/include/c++/13/bits/stl_tree.h:
 
 /opt/ros/jazzy/include/rcl/rcl/publisher.h:
 
 /opt/ros/jazzy/include/rmw/rmw/events_statuses/liveliness_changed.h:
-
-/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/time.hpp:
-
-/opt/ros/jazzy/include/rcl/rcl/service_introspection.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:
 
 /usr/include/stdint.h:
 
@@ -1968,47 +2041,57 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 
 /opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/identifier.h:
 
+/opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/api/dynamic_type.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/loaned_message.hpp:
 
 /opt/ros/jazzy/include/rcl/rcl/visibility_control.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/create_client.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/executors/events_executor/events_queue.hpp:
 
-/opt/ros/jazzy/include/rcl_action/rcl_action/goal_state_machine.h:
+/opt/ros/jazzy/include/rclcpp/rclcpp/parameter.hpp:
 
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h:
+/usr/include/pthread.h:
 
-/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/field__struct.h:
+/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/executors/events_executor/simple_events_queue.hpp:
 
-/usr/include/c++/13/pstl/execution_defs.h:
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:
 
-/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/ros_message_intra_process_buffer.hpp:
 
-/usr/include/c++/13/bits/new_allocator.h:
+/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/subscription_intra_process.hpp:
 
-/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/follow_path__struct.hpp:
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
-/opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/navigate_to_pose.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_timers_interface_traits.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp:
+/opt/ros/jazzy/include/rcpputils/rcpputils/thread_safety_annotations.hpp:
 
-/usr/include/c++/13/bits/chrono.h:
+/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/subscription_intra_process_base.hpp:
 
-/opt/ros/jazzy/include/rcl_action/rcl_action/types.h:
+/usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h:
 
-/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp:
+/opt/ros/jazzy/include/rmw/rmw/impl/config.h:
 
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
-/opt/ros/jazzy/include/rcl_action/rcl_action/visibility_control.h:
+/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/timers_manager.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp:
+/usr/include/x86_64-linux-gnu/sys/types.h:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/generic_client.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp:
+/opt/ros/jazzy/include/rmw/rmw/event_callback_type.h:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp:
+/opt/ros/jazzy/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/callback_group.hpp:
+
+/usr/include/c++/13/bits/atomic_futex.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/generic_subscription.hpp:
 
 /opt/ros/jazzy/include/nav2_msgs/nav2_msgs/action/detail/follow_path__builder.hpp:
 
@@ -2040,9 +2123,9 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/dynamic_typesupport/dynamic_message_type.hpp:
-
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/dynamic_typesupport/dynamic_message_type.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp:
 
@@ -2051,14 +2134,6 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 /opt/ros/jazzy/include/rclcpp/rclcpp/visibility_control.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp:
-
-/usr/include/c++/13/bits/istream.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp:
-
-/usr/include/c++/13/bits/locale_conv.h:
 
 /opt/ros/jazzy/include/rcutils/rcutils/visibility_control.h:
 
@@ -2172,6 +2247,8 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 
 /usr/include/c++/13/algorithm:
 
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/pose_with_covariance_stamped.hpp:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/subscription_wait_set_mask.hpp:
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/individual_type_description__struct.h:
@@ -2256,6 +2333,8 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 
 /opt/ros/jazzy/include/rcutils/rcutils/qsort.h:
 
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__struct.hpp:
+
 /usr/include/c++/13/bits/char_traits.h:
 
 /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp:
@@ -2316,14 +2395,6 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 
 /opt/ros/jazzy/include/rmw/rmw/events_statuses/requested_deadline_missed.h:
 
-/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/any_executable.hpp:
-
-/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:
-
-/opt/ros/jazzy/include/rmw/rmw/features.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
 /opt/ros/jazzy/include/rcl/rcl/event_callback.h:
@@ -2382,12 +2453,6 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 
 /opt/ros/jazzy/include/rmw/rmw/types.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:
-
-/opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/api/dynamic_type.h:
-
-/usr/include/c++/13/bits/cpp_type_traits.h:
-
 /opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/api/serialization_support_interface.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp:
@@ -2408,25 +2473,17 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
-/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp:
-
 /usr/include/c++/13/bits/basic_string.tcc:
 
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp:
+
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
-
-/usr/include/c++/13/tr1/legendre_function.tcc:
-
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/field__struct.h:
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/field_type__struct.h:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp:
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_source__struct.h:
-
-/opt/ros/jazzy/include/action_msgs/action_msgs/msg/detail/goal_info__functions.h:
-
-/usr/include/c++/13/bits/hash_bytes.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/experimental/intra_process_manager.hpp:
 
@@ -2435,8 +2492,6 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
 /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_initialization.hpp:
-
-/usr/include/c++/13/bits/hashtable.h:
 
 /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp:
 
@@ -2545,19 +2600,3 @@ CMakeFiles/nav_menu_client.dir/src/nav_menu.cpp.o: /root/robot_project/src/nav_m
 /usr/include/c++/13/bits/enable_special_members.h:
 
 /usr/include/c++/13/bits/exception.h:
-
-/usr/include/c++/13/bits/functexcept.h:
-
-/usr/include/c++/13/bits/functional_hash.h:
-
-/usr/include/c++/13/bits/invoke.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
-/usr/include/features-time64.h:
-
-/usr/include/c++/13/type_traits:
-
-/usr/include/c++/13/bits/list.tcc:
-
-/usr/include/c++/13/bits/locale_classes.h:

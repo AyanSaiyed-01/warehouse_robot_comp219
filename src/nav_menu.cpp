@@ -41,10 +41,10 @@ public:
       "/lifecycle_manager_localization/manage_nodes");
 
     locations_ = {
-      {"Loading Dock", 3.0, 2.5, 0.0},
-      {"Dispatch Area", 3.0, -2.5, 0.0},
-      {"Charging Station", -3.0, -2.5, 0.0},
-      {"Inspection Point", 0.0, 0.0, 0.0},
+      {"Loading Dock",     3.5, -3.0, 0.0},
+      {"Dispatch Area",    3.5,  3.0, 1.5708},
+      {"Charging Station", -3.5,  3.0, 1.5708},
+      {"Inspection Point",  0.0,  0.0, 0.0},
     };
   }
 
@@ -193,6 +193,12 @@ private:
   {
     int choice = -1;
     std::cin >> choice;
+
+    if (std::cin.eof()) {
+      RCLCPP_INFO(rclcpp::get_logger("nav_menu_client"), "stdin closed; exiting.");
+      rclcpp::shutdown();
+      std::exit(0);
+    }
 
     if (std::cin.fail()) {
       std::cin.clear();
