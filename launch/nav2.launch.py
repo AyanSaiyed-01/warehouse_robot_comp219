@@ -2,7 +2,7 @@ import os
 
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument
+from launch.actions import DeclareLaunchArgument, TimerAction
 from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 
@@ -113,6 +113,18 @@ def generate_launch_description():
         parameters=[params_file, {"use_sim_time": use_sim_time}],
     )
 
+    # Re-seed AMCL after sensors are running (mirrors RViz 2D Pose Estimate).
+    set_initial_amcl = Node(
+        package="warehouse_robot_comp219",
+        executable="set_initial_amcl_pose.py",
+        name="set_initial_amcl_pose",
+        output="screen",
+        parameters=[
+            {"use_sim_time": use_sim_time},
+            {"x": -4.0, "y": -3.0, "yaw": 0.0},
+        ],
+    )
+
     lifecycle_manager_navigation = Node(
         package="nav2_lifecycle_manager",
         executable="lifecycle_manager",
@@ -135,18 +147,22 @@ def generate_launch_description():
         ],
     )
 
-    return LaunchDescription([
-        declare_map,
-        declare_params_file,
-        declare_use_sim_time,
-        declare_autostart,
-        map_server,
-        amcl,
-        lifecycle_manager_localization,
-        planner_server,
-        controller_server,
-        smoother_server,
-        behavior_server,
-        waypoint_follower,
-        lifecycle_manager_navigation,
-    ])
+    return LaunchDescription(
+        [
+            declare_map,
+            declare_params_file,
+            declare_use_sim_time,
+            declare_autostart,
+            map_server,
+            amcl,
+            lifecycle_manager_localization,
+            planner_server,
+            controller_server,
+            smoother_server,
+            behavior_server,
+            waypoint_follower,
+            lifecycle_manager_navigation,
+            # After localization stack is up, wait for /scan + settle, then /initialpose.
+            TimerAction(period=8.0, actions=[set_initial_amcl]),
+        ]
+    )

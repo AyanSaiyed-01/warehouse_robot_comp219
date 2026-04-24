@@ -373,7 +373,7 @@ class LangChainAgent:
         provider_name = provider.strip().lower()
         if provider_name == "gemini":
             llm = ChatGoogleGenerativeAI(
-                model=model or "gemini-1.5-flash",
+                model=model or "gemini-2.5-flash",
                 temperature=0.0,
             )
         elif provider_name == "openai":
